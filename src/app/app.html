@@ -1,7 +1,11 @@
 <div class="container">
   <app-sidebar></app-sidebar>
   <main>
-    <app-filter-bar (search)="filterById($event)"></app-filter-bar>
-    <app-user-table [users]="filteredUsers"></app-user-table>
+    <h1 class="titlebar">قائمة العملاء</h1>
+    <div class="table">
+
+      <app-filter-bar (search)="filterById($event)"></app-filter-bar>
+      <app-user-table [users]="filteredUsers"></app-user-table>
+    </div>
   </main>
 </div>
