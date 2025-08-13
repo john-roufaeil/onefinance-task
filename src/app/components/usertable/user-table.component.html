@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>الاسم</th>
+      <th>الحالة</th>
+      <th> قطاع العمل</th>
+      <th>الرقم القومي</th>
+      <th>رقم الهاتف</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let user of users; let i = index">
+      <td>{{ i+1 }}</td>
+      <td>{{ user.name }}</td>
+      <td>
+        <span [class.accepted]="user.status === 'accepted'" [class.rejected]="user.status === 'rejected'">
+          {{ user.status === 'accepted' ? 'مقبول' : 'مرفوض' }}
+        </span>
+      </td>
+      <td>{{ user.work }}</td>
+      <td>{{ user.nid }}</td>
+      <td>{{ user.phone }}</td>
+    </tr>
+  </tbody>
+</table>

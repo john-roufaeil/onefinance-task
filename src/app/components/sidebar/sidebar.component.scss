@@ -1,0 +1,12 @@
+.sidebar {
+  background: #111;
+  color: white;
+  width: 220px;
+  height: 100vh;
+  padding: 1rem;
+  direction: rtl;
+
+  .active {
+    background: #fff3;
+  }
+}

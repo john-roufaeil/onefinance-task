@@ -1,0 +1,7 @@
+<div class="container">
+  <app-sidebar></app-sidebar>
+  <main>
+    <app-filter-bar (search)="filterById($event)"></app-filter-bar>
+    <app-user-table [users]="filteredUsers"></app-user-table>
+  </main>
+</div>
