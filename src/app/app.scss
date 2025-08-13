@@ -1,6 +1,7 @@
 .container {
   display: flex;
   min-height: 100vh;
+  direction: rtl;
 }
 
 main {
@@ -13,7 +14,7 @@ main {
 }
 
 .toolbar button {
-  margin-right: 10px;
+  margin-left: 10px;
   padding: 8px 16px;
   border: 1px solid #ccc;
   background: white;
