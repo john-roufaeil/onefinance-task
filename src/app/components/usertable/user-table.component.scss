@@ -4,7 +4,6 @@ table {
   background: white;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 th,
@@ -12,6 +11,21 @@ td {
   padding: 12px;
   text-align: right;
   border-bottom: 1px solid #eee;
+
+  button {
+    color: #fff;
+    text-align: start;
+    width: 5rem;
+    background-color: #2e2e2e;
+    border: none;
+    border-radius: 4px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#000, 10%);
+    }
+  }
 }
 
 th {
@@ -26,10 +40,17 @@ tr:hover {
 
 .accepted {
   color: #28a745;
-  font-weight: bold;
+  background-color: #00CC6733;
+  border: 1px solid #28a745;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
+  ;
 }
 
 .rejected {
   color: #dc3545;
-  font-weight: bold;
+  background-color: #F1270538;
+  border: 1px solid #dc3545;
+  padding: 0.2rem 1rem;
+  border-radius: 0.5rem;
 }
