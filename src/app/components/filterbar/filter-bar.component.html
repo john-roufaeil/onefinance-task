@@ -1,4 +1,29 @@
 <div class="filter-bar">
-  <input [(ngModel)]="searchId" placeholder="البحث بالرقم القومي">
-  <button (click)="onSearch()">بحث</button>
+  <div class="filter-group">
+    <div class="search-box">
+      <i class="fas fa-search"></i>
+      <input [(ngModel)]="searchId" placeholder="البحث بالرقم القومي">
+    </div>
+    <div class="count-circle">0</div>
+    <select [(ngModel)]="status">
+      <option value="">الحالة</option>
+      <option value="active">نشط</option>
+      <option value="inactive">غير نشط</option>
+    </select>
+  </div>
+
+  <button class="btn delete-all" disabled>
+    <i class="fas fa-trash"></i>
+    مسح الكل
+  </button>
+
+  <button class="btn search-btn">
+    <i class="fas fa-search"></i>
+    بحث
+  </button>
+
+  <button class="btn add-btn">
+    <i class="fas fa-user-plus"></i>
+    إضافة شخص
+  </button>
 </div>

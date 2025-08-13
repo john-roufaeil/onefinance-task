@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 export class FilterBarComponent {
   @Output() search = new EventEmitter<string>();
   searchId: string = '';
+  status: string = '';
 
   onSearch() {
     this.search.emit(this.searchId);
